@@ -2,5 +2,6 @@
 @import "./global/utilities/color.css";
 @import "./global/utilities/typography.css";
 @import "./global/header.css";
-@import "./global/home/intro.css";
 @import "./global/utilities/components.css";
+@import "./global/home/intro.css";
+@import "./global/bicycles/list-bicycles.css";
