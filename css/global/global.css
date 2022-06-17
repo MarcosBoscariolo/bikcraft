@@ -1,0 +1,24 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: #111111;
+    padding-bottom: 600px;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    color: inherit; /* Declarando que a tag <a> irá herdar a cor do pai */
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}

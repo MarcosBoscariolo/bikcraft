@@ -1,0 +1,22 @@
+.btn {
+    background: var(--color-linear-yellow);
+    border-radius: 4px;
+    /* box-shadow: x y blur tamanho e a cor; */
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+    color: var(--color-p5);
+    display: inline-block;
+    font: 600 1.125rem/1.35 "Poppins", sans-serif;
+    padding: 16px 32px;
+    text-transform: uppercase;
+}
+
+.btn:hover {
+    background: linear-gradient(#ffb60d, #e59317);
+}
+
+@media(max-width: 600px) {
+    .btn {
+        font-size: 1rem;
+        padding: 12px 16px;
+    }
+}
