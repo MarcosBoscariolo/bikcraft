@@ -10,5 +10,7 @@
 @import"./global/home/partners.css";
 @import"./global/home/comment.css";
 @import "./global/insurance/insurance.css";
+@import "./global/insurance/benefits.css";
+@import "./global/insurance/faq.css";
 @import "./global/terms/terms.css";
 @import "./global/bicycles/bicycles-page/bicycles.css";
