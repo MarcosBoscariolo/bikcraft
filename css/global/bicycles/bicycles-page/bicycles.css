@@ -1,0 +1,130 @@
+.bicycles-bg {
+    background: linear-gradient(to right, var(--color-0) 30%, var(--color-11) 0%);
+}
+
+.bicycles {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.bicycles-image {
+    display: grid;
+}
+
+.bicycles-image img,
+.bicycles-image span {
+    grid-area: 1/1;
+}
+
+.bicycles-image span {
+    background-color: var(--color-12);
+    border-radius: 4px 0 0 4px;
+    border-bottom: 1px solid var(--color-p2);
+    border-left: 1px solid var(--color-p2);
+    border-top: 1px solid var(--color-p2);
+    display: inline-block;
+    margin-top: 20px;
+    padding: 8px 16px 8px 8px;
+    place-self: start end;
+}
+
+.bicycles-content {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-content: start;
+}
+
+.bicycles-content h2,
+.bicycles-content p {
+    grid-column: 1/-1;
+}
+
+.bicycles-content h2 {
+    margin-bottom: 20px;
+}
+
+.bicycles-content h2::before {
+    background-color: var(--color-p1);
+    content: "";
+    display: block;
+    margin-bottom: 8px;
+    width: 12px;
+    height: 8px;
+}
+
+.bicycles-content p {
+    margin-bottom: 32px;
+}
+
+.bicycles-content a {
+    place-self: end;
+}
+
+.bicycles-content ul {
+    display: grid;
+    gap: 16px;
+}
+
+.bicycles-content li {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.bicycles-content img {
+    width: 24px;
+}
+
+@media (max-width: 800px) {
+    .bicycles-bg {
+        background: var(--color-11);
+    }
+
+    .bicycles {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+}
+
+@media (max-width: 600px) {
+    .bicycles-content {
+        grid-template-columns: 1fr;
+    }
+
+    .bicycles-content ul {
+        font-size: 1rem;
+        grid-template-columns: 1fr 1fr;
+        margin-bottom: 32px;
+    }
+
+    .bicycles-content a {
+        place-self: start;
+    }
+    
+    .bicycles-image span {
+        border-bottom: none;
+        border-left: none;
+        border-top: none;
+    }
+}
+
+@media (max-width: 450px) {
+    .bicycles-image span {
+        border-radius: 4px;
+        margin-top: 0;
+        margin-bottom: -32px;
+        font-size: 1rem;
+        padding: 4px 8px;
+        place-self: end end;
+    }
+    
+    .bicycles-bg span {
+        background-color: var(--color-3);
+        color: var(--color-12);
+    }
+}
