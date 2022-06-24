@@ -6,6 +6,8 @@
 @import "./global/utilities/components.css";
 @import "./global/home/intro.css";
 @import "./global/bicycles/list-bicycles.css";
+@import "./global/bicycles/bicycle.css";
+@import "./global/bicycles/bicycle-insurance.css";
 @import"./global/home/tech.css";
 @import"./global/home/partners.css";
 @import"./global/home/comment.css";
