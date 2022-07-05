@@ -32,7 +32,7 @@
 }
 
 .budget-product {
-    background-color: var(--color-12);
+    background: var(--color-12) url("../../../img/dec/bottom-left.svg") no-repeat bottom 20px left 20px;
     border-radius: 5px 0 0 5px;
     display: grid;
     align-content: start;
@@ -107,7 +107,7 @@
 }
 
 .budget-data {
-    background-color: var(--color-0);
+    background: var(--color-0) url("../../../img/dec/bottom-right.svg") no-repeat bottom 20px right 20px;
     border-radius: 0 5px 5px 0;
 }
 
@@ -157,13 +157,14 @@
     }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 800px) {
     .budget {
         grid-template-columns: 1fr;
         padding-bottom: 60px;
     }
 
     .budget-product {
+        background: var(--color-12);
         border-radius: 5px 5px 0 0;
     }
 
