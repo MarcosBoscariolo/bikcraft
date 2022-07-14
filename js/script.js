@@ -19,3 +19,20 @@ paramsSearch.forEach((activateProduct) => {
         product.checked = true;
     }
 });
+
+// faq
+const faqButton = document.querySelectorAll('.faq button');
+
+faqButton.forEach((onClick) => {
+    onClick.addEventListener('click', activeFaq);
+})
+
+function activeFaq(event) {
+    const question = event.currentTarget;
+    const controls = question.getAttribute('aria-controls');
+    const answer = document.getElementById(controls);
+    
+    answer.classList.toggle('active');
+    const answerActive = answer.classList.contains('active');
+    question.setAttribute('aria-expanded', answerActive);
+}
