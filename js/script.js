@@ -36,3 +36,20 @@ function activeFaq(event) {
     const answerActive = answer.classList.contains('active');
     question.setAttribute('aria-expanded', answerActive);
 }
+
+// Galeria de Bicicletas imagens
+const galery = document.querySelectorAll('.bicycle-images img');
+const galeryContainer = document.querySelector('.bicycle-images');
+
+galery.forEach((onClickImage) => {
+    onClickImage.addEventListener('click', changeImage);
+});
+
+function changeImage(event) {
+    const img = event.currentTarget;
+    const media = matchMedia('(min-width: 1000px)').matches;
+
+    if (media) {
+        galeryContainer.prepend(img);
+    }
+}
