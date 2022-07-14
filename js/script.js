@@ -1,3 +1,8 @@
+// Animação "Simple Anime"
+if (window.SimpleAnime) {
+    new SimpleAnime();
+}
+
 // Ativar links do menu
 const links = document.querySelectorAll('.header-menu a');
 
